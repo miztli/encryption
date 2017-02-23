@@ -2,14 +2,13 @@ package com.examples.java.encryption.symmetric.aes;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
 import java.security.NoSuchAlgorithmException;
 import java.security.Provider;
 
 /**
  * Created by miztli on 22/02/17.
  */
-public abstract class AbstractSymmetricEncryptor<T, E> implements SymmetricEncryption<T, E> {
+public abstract class AbstractSymmetricEncryptor<T, E> implements ISymmetricEncryption<T, E> {
 
     private Cipher cipher;
     private Provider provider;
